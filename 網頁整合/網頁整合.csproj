@@ -112,6 +112,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\TryMultipleStyleSheets.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -124,6 +125,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="img\youtube.png" />
     <Content Include="Try\AddOne.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -157,6 +159,11 @@
     <Content Include="Site.Master" />
     <Content Include="Try\Blank.aspx" />
     <Content Include="Try\ChangePage.aspx" />
+    <Content Include="Try\CSSInlineStyles.aspx" />
+    <Content Include="Try\CSSInternalStyles.aspx" />
+    <Content Include="Try\CSSMultipleStyleSheets.aspx" />
+    <Content Include="Try\Hyperlink.aspx" />
+    <Content Include="Try\Label.aspx" />
     <Content Include="Try\PageLifeCycle.aspx" />
     <Content Include="Try\UseMaster_PageLifeCycle.aspx" />
     <Content Include="ViewSwitcher.ascx" />
@@ -219,6 +226,41 @@
     </Compile>
     <Compile Include="Try\ChangePage.aspx.designer.cs">
       <DependentUpon>ChangePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Try\CSSInlineStyles.aspx.cs">
+      <DependentUpon>CSSInlineStyles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Try\CSSInlineStyles.aspx.designer.cs">
+      <DependentUpon>CSSInlineStyles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Try\CSSInternalStyles.aspx.cs">
+      <DependentUpon>CSSInternalStyles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Try\CSSInternalStyles.aspx.designer.cs">
+      <DependentUpon>CSSInternalStyles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Try\CSSMultipleStyleSheets.aspx.cs">
+      <DependentUpon>CSSMultipleStyleSheets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Try\CSSMultipleStyleSheets.aspx.designer.cs">
+      <DependentUpon>CSSMultipleStyleSheets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Try\Hyperlink.aspx.cs">
+      <DependentUpon>Hyperlink.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Try\Hyperlink.aspx.designer.cs">
+      <DependentUpon>Hyperlink.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Try\Label.aspx.cs">
+      <DependentUpon>Label.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Try\Label.aspx.designer.cs">
+      <DependentUpon>Label.aspx</DependentUpon>
     </Compile>
     <Compile Include="Try\LifeCycle.Master.cs">
       <DependentUpon>LifeCycle.Master</DependentUpon>
