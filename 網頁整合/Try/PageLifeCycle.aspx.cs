@@ -46,5 +46,10 @@ namespace 網頁整合.Try
         {
             Response.Write("Button1_Click<br>");
         }
+
+        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+            Response.Write("TextBox1_TextChanged<br>");
+        }
     }
 }
