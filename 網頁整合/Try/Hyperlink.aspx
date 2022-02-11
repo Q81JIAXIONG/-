@@ -10,7 +10,10 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <a href="https://www.youtube.com/"><img src="../img/youtube.png" alt="Alternate Text" />youtube</a>
+            <a href="https://www.youtube.com/">
+                <img src="../img/youtube.png" alt="Alternate Text" />
+                youtube
+            </a>
         </div>
     </form>
 </body>
