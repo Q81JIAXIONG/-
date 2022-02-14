@@ -129,6 +129,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Try\GridView.aspx" />
+    <Content Include="Try\tryContorller.aspx" />
     <Content Include="WebPage\Advanced.aspx" />
     <Content Include="WebPage\General.aspx" />
     <Content Include="WebPage\Home.aspx" />
@@ -235,6 +236,13 @@
     </Compile>
     <Compile Include="Try\GridView.aspx.designer.cs">
       <DependentUpon>GridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Try\tryContorller.aspx.cs">
+      <DependentUpon>tryContorller.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Try\tryContorller.aspx.designer.cs">
+      <DependentUpon>tryContorller.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebPage\Advanced.aspx.cs">
       <DependentUpon>Advanced.aspx</DependentUpon>

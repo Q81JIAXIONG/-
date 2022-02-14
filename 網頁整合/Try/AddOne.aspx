@@ -13,6 +13,7 @@
             <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
             <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" UseSubmitBehavior="False" />
         </div>
+        <asp:HyperLink ID="HyperLink1" runat="server">HyperLink</asp:HyperLink>
     </form>
 </body>
 </html>
