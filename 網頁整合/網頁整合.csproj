@@ -128,6 +128,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Try\DigitalComputing.aspx" />
     <Content Include="Try\GridView.aspx" />
     <Content Include="Try\tryContorller.aspx" />
     <Content Include="WebPage\Advanced.aspx" />
@@ -230,6 +231,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Model\User.cs" />
+    <Compile Include="Try\DigitalComputing.aspx.cs">
+      <DependentUpon>DigitalComputing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Try\DigitalComputing.aspx.designer.cs">
+      <DependentUpon>DigitalComputing.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Try\GridView.aspx.cs">
       <DependentUpon>GridView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -29,7 +29,7 @@
             <asp:Literal ID="Literal1" Text="Literal" runat="server"></asp:Literal>
             Literal
 
-            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="https://www.youtube.com/" ImageUrl="~/img/youtube.png">youtube</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="https://www.youtube.com/" ImageUrl="~/img/youtube.png" Text="yyy">youtube</asp:HyperLink>
 
             <asp:DropDownList ID="DropDownList1" runat="server">
                 <asp:ListItem Selected="True" Value="0">請選擇</asp:ListItem>
