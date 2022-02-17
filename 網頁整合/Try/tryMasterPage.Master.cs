@@ -7,16 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace 網頁整合.Try
 {
-    public partial class tryContorller : System.Web.UI.Page
+    public partial class tryMasterPage : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            p1.InnerText = "123";
-        }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            p1.InnerText = "321";
+            Response.Write("tryMasterPage Load");
         }
     }
 }

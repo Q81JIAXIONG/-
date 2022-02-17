@@ -131,6 +131,8 @@
     <Content Include="Try\DigitalComputing.aspx" />
     <Content Include="Try\GridView.aspx" />
     <Content Include="Try\tryContorller.aspx" />
+    <Content Include="Try\useTryMarstPage1.aspx" />
+    <Content Include="Try\useTryMarstPage2.aspx" />
     <Content Include="WebPage\Advanced.aspx" />
     <Content Include="WebPage\General.aspx" />
     <Content Include="WebPage\Home.aspx" />
@@ -251,6 +253,27 @@
     </Compile>
     <Compile Include="Try\tryContorller.aspx.designer.cs">
       <DependentUpon>tryContorller.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Try\tryMasterPage.Master.cs">
+      <DependentUpon>tryMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Try\tryMasterPage.Master.designer.cs">
+      <DependentUpon>tryMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Try\useTryMarstPage1.aspx.cs">
+      <DependentUpon>useTryMarstPage1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Try\useTryMarstPage1.aspx.designer.cs">
+      <DependentUpon>useTryMarstPage1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Try\useTryMarstPage2.aspx.cs">
+      <DependentUpon>useTryMarstPage2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Try\useTryMarstPage2.aspx.designer.cs">
+      <DependentUpon>useTryMarstPage2.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebPage\Advanced.aspx.cs">
       <DependentUpon>Advanced.aspx</DependentUpon>
@@ -395,6 +418,7 @@
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
     <Content Include="Try\LifeCycle.Master" />
+    <Content Include="Try\tryMasterPage.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

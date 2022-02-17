@@ -41,6 +41,11 @@ namespace 網頁整合.Try
         {
             Response.Write("Page_PreRenderComplete<br>");
         }
+        protected void Page_SaveStateComplete(object sender, EventArgs e)
+        {
+            Response.Write("Page_SaveStateComplete<br>");
+        }
+
 
         protected void Button1_Click(object sender, EventArgs e)
         {
