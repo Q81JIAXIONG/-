@@ -11,12 +11,23 @@ namespace 網頁整合.Try
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            p1.InnerText = "123";
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            p1.InnerText = "321";
+            Response.Write(RadioButtonList1.SelectedValue);
+            Response.Write(DropDownList1.SelectedValue);
+            //for (int i = 0; i < CheckBoxList1.Items.Count; i++)
+            //{
+            //    if (CheckBoxList1.Items[i].Selected)
+            //        Response.Write(CheckBoxList1.Items[i].Value);
+            //}
+
+            foreach (ListItem item in CheckBoxList1.Items)
+            {
+                if (item.Selected)
+                    Response.Write(item.Value);
+            }
         }
     }
 }

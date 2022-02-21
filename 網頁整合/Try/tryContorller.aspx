@@ -10,14 +10,14 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <p runat="server" id="p1"></p>
+            <asp:RadioButtonList ID="RadioButtonList1" runat="server" DataSourceID="SqlDataSource_Sex" DataTextField="Sex" DataValueField="SexID"></asp:RadioButtonList>
+            <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource_Education" DataTextField="Education" DataValueField="EducationID"></asp:DropDownList>
+            <asp:CheckBoxList ID="CheckBoxList1" runat="server" DataSourceID="SqlDataSource_PL" DataTextField="language" DataValueField="PLID"></asp:CheckBoxList>
+            <asp:SqlDataSource ID="SqlDataSource_Sex" runat="server" ConnectionString="<%$ ConnectionStrings:網頁整合DBConnectionString %>" SelectCommand="SELECT * FROM [Sex]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource_Education" runat="server" ConnectionString="<%$ ConnectionStrings:網頁整合DBConnectionString %>" SelectCommand="SELECT * FROM [Education]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource_PL" runat="server" ConnectionString="<%$ ConnectionStrings:網頁整合DBConnectionString %>" SelectCommand="SELECT * FROM [ProgrammingLanguage]"></asp:SqlDataSource>
+
             <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
-            <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1"></asp:DropDownList>
-            <asp:CheckBoxList ID="CheckBoxList1" runat="server"></asp:CheckBoxList>
-            <asp:RadioButtonList ID="RadioButtonList1" runat="server"></asp:RadioButtonList>
-            <asp:GridView ID="GridView1" runat="server"></asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
-            <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="125px"></asp:DetailsView>
         </div>
     </form>
 </body>
