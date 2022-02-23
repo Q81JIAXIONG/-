@@ -11,7 +11,8 @@ namespace 網頁整合.Try
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Application["12"] = 1563;
+            Response.Write(Application["12"].ToString());
         }
     }
 }

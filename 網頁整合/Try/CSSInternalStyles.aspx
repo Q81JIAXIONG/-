@@ -35,23 +35,24 @@
                 <a class="green" href="https://line.me/zh-hant/">LINE</a>
             </div>   
             <input type="button" id="btn" value="顏色交換" />
+            <asp:Button Text="text" runat="server" />
         </div>
     </form>
 
     <script>
         var btn = document.querySelector('#btn');
+        var a = document.querySelectorAll('a');
+        var colors = ['red', 'blue', 'green'];
         var index = 1;
 
-        var chengeColor = function () {
-            var colors = ['red', 'blue', 'green'];
-            var as = document.querySelectorAll('a');
-            for (var i = 0; i < as.length; i++) {
-                as[i].classList = [];
-                as[i].classList.add(colors[(i + index) % 3])
+        var changeColor = function () {
+            for (var i = 0; i < a.length; i++) {
+                a[i].classList = [];
+                a[i].classList.add(colors[(i + index) % 3])
             }
             index++;
         }
-        btn.addEventListener('click', chengeColor)
+        btn.addEventListener('click', changeColor)
     </script>
 </body>
 </html>

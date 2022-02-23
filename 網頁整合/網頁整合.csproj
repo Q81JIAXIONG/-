@@ -130,9 +130,12 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Try\DigitalComputing.aspx" />
     <Content Include="Try\GridView.aspx" />
+    <Content Include="Try\TryApplication.aspx" />
     <Content Include="Try\tryContorller.aspx" />
+    <Content Include="Try\TrySession.aspx" />
     <Content Include="Try\useTryMarstPage1.aspx" />
     <Content Include="Try\useTryMarstPage2.aspx" />
+    <Content Include="Try\TryViewState.aspx" />
     <Content Include="WebPage\Advanced.aspx" />
     <Content Include="WebPage\General.aspx" />
     <Content Include="WebPage\Home.aspx" />
@@ -247,6 +250,13 @@
     <Compile Include="Try\GridView.aspx.designer.cs">
       <DependentUpon>GridView.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Try\TryApplication.aspx.cs">
+      <DependentUpon>TryApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Try\TryApplication.aspx.designer.cs">
+      <DependentUpon>TryApplication.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Try\tryContorller.aspx.cs">
       <DependentUpon>tryContorller.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -261,6 +271,13 @@
     <Compile Include="Try\tryMasterPage.Master.designer.cs">
       <DependentUpon>tryMasterPage.Master</DependentUpon>
     </Compile>
+    <Compile Include="Try\TrySession.aspx.cs">
+      <DependentUpon>TrySession.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Try\TrySession.aspx.designer.cs">
+      <DependentUpon>TrySession.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Try\useTryMarstPage1.aspx.cs">
       <DependentUpon>useTryMarstPage1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -274,6 +291,13 @@
     </Compile>
     <Compile Include="Try\useTryMarstPage2.aspx.designer.cs">
       <DependentUpon>useTryMarstPage2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Try\TryViewState.aspx.cs">
+      <DependentUpon>TryViewState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Try\TryViewState.aspx.designer.cs">
+      <DependentUpon>TryViewState.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebPage\Advanced.aspx.cs">
       <DependentUpon>Advanced.aspx</DependentUpon>
