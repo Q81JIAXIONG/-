@@ -128,10 +128,12 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Try\CSSInternalStyles2.aspx" />
     <Content Include="Try\DigitalComputing.aspx" />
     <Content Include="Try\GridView.aspx" />
     <Content Include="Try\TryApplication.aspx" />
     <Content Include="Try\tryContorller.aspx" />
+    <Content Include="Try\TryCookie.aspx" />
     <Content Include="Try\TrySession.aspx" />
     <Content Include="Try\useTryMarstPage1.aspx" />
     <Content Include="Try\useTryMarstPage2.aspx" />
@@ -236,6 +238,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Model\User.cs" />
+    <Compile Include="Try\CSSInternalStyles2.aspx.cs">
+      <DependentUpon>CSSInternalStyles2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Try\CSSInternalStyles2.aspx.designer.cs">
+      <DependentUpon>CSSInternalStyles2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Try\DigitalComputing.aspx.cs">
       <DependentUpon>DigitalComputing.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -263,6 +272,13 @@
     </Compile>
     <Compile Include="Try\tryContorller.aspx.designer.cs">
       <DependentUpon>tryContorller.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Try\TryCookie.aspx.cs">
+      <DependentUpon>TryCookie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Try\TryCookie.aspx.designer.cs">
+      <DependentUpon>TryCookie.aspx</DependentUpon>
     </Compile>
     <Compile Include="Try\tryMasterPage.Master.cs">
       <DependentUpon>tryMasterPage.Master</DependentUpon>
