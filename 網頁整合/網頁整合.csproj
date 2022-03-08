@@ -129,6 +129,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Try\CSSInternalStyles2.aspx" />
+    <Content Include="Try\DataReader.aspx" />
     <Content Include="Try\dataSource.aspx" />
     <Content Include="Try\DigitalComputing.aspx" />
     <Content Include="Try\GridView.aspx" />
@@ -245,6 +246,13 @@
     </Compile>
     <Compile Include="Try\CSSInternalStyles2.aspx.designer.cs">
       <DependentUpon>CSSInternalStyles2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Try\DataReader.aspx.cs">
+      <DependentUpon>DataReader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Try\DataReader.aspx.designer.cs">
+      <DependentUpon>DataReader.aspx</DependentUpon>
     </Compile>
     <Compile Include="Try\dataSource.aspx.cs">
       <DependentUpon>dataSource.aspx</DependentUpon>

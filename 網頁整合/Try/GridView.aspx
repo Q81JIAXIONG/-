@@ -10,43 +10,34 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" AutoGenerateEditButton="True" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="UserID" DataSourceID="SqlDataSource1">
+            <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="PLID" DataSourceID="SqlDataSource1" PageSize="3" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Vertical">
+                <AlternatingRowStyle BackColor="White" />
                 <Columns>
-                    <asp:BoundField DataField="UserID" HeaderText="UserID" InsertVisible="False" ReadOnly="True" SortExpression="UserID" />
-                    <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
-                    <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
-                    <asp:BoundField DataField="Account" HeaderText="Account" SortExpression="Account" />
-                    <asp:BoundField DataField="PassWord" HeaderText="PassWord" SortExpression="PassWord" />
-                    <asp:BoundField DataField="PermissionID" HeaderText="PermissionID" SortExpression="PermissionID" />
+                    <asp:CommandField ButtonType="Button" ShowDeleteButton="True" ShowEditButton="True" />
+                    <asp:BoundField DataField="PLID" HeaderText="PLID" ReadOnly="True" SortExpression="PLID" />
+                    <asp:BoundField DataField="language" HeaderText="language" SortExpression="language" />
                 </Columns>
-                <FooterStyle BackColor="#FFFFCC" ForeColor="#330099" />
-                <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="#FFFFCC" />
-                <PagerStyle BackColor="#FFFFCC" ForeColor="#330099" HorizontalAlign="Center" />
-                <RowStyle BackColor="White" ForeColor="#330099" />
-                <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="#663399" />
-                <SortedAscendingCellStyle BackColor="#FEFCEB" />
-                <SortedAscendingHeaderStyle BackColor="#AF0101" />
-                <SortedDescendingCellStyle BackColor="#F6F0C0" />
-                <SortedDescendingHeaderStyle BackColor="#7E0000" />
+                <FooterStyle BackColor="#CCCC99" />
+                <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
+                <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
+                <RowStyle BorderStyle="Double" BackColor="#F7F7DE" />
+                <SelectedRowStyle BackColor="#CE5D5A" BorderStyle="Ridge" Font-Bold="True" ForeColor="White" />
+                <SortedAscendingCellStyle BackColor="#FBFBF2" />
+                <SortedAscendingHeaderStyle BackColor="#848384" />
+                <SortedDescendingCellStyle BackColor="#EAEAD3" />
+                <SortedDescendingHeaderStyle BackColor="#575357" />
             </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:網頁整合DBConnectionString %>" DeleteCommand="DELETE FROM [User] WHERE [UserID] = @UserID" InsertCommand="INSERT INTO [User] ([Name], [Email], [Account], [PassWord], [PermissionID]) VALUES (@Name, @Email, @Account, @PassWord, @PermissionID)" SelectCommand="SELECT * FROM [User]" UpdateCommand="UPDATE [User] SET [Name] = @Name, [Email] = @Email, [Account] = @Account, [PassWord] = @PassWord, [PermissionID] = @PermissionID WHERE [UserID] = @UserID">
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:網頁整合DBConnectionString %>" DeleteCommand="DELETE FROM [ProgrammingLanguage] WHERE [PLID] = @PLID" InsertCommand="INSERT INTO [ProgrammingLanguage] ([PLID], [language]) VALUES (@PLID, @language)" SelectCommand="SELECT * FROM [ProgrammingLanguage]" UpdateCommand="UPDATE [ProgrammingLanguage] SET [language] = @language WHERE [PLID] = @PLID">
                 <DeleteParameters>
-                    <asp:Parameter Name="UserID" Type="Int32" />
+                    <asp:Parameter Name="PLID" Type="Byte" />
                 </DeleteParameters>
                 <InsertParameters>
-                    <asp:Parameter Name="Name" Type="String" />
-                    <asp:Parameter Name="Email" Type="String" />
-                    <asp:Parameter Name="Account" Type="String" />
-                    <asp:Parameter Name="PassWord" Type="String" />
-                    <asp:Parameter Name="PermissionID" Type="Byte" />
+                    <asp:Parameter Name="PLID" Type="Byte" />
+                    <asp:Parameter Name="language" Type="String" />
                 </InsertParameters>
                 <UpdateParameters>
-                    <asp:Parameter Name="Name" Type="String" />
-                    <asp:Parameter Name="Email" Type="String" />
-                    <asp:Parameter Name="Account" Type="String" />
-                    <asp:Parameter Name="PassWord" Type="String" />
-                    <asp:Parameter Name="PermissionID" Type="Byte" />
-                    <asp:Parameter Name="UserID" Type="Int32" />
+                    <asp:Parameter Name="language" Type="String" />
+                    <asp:Parameter Name="PLID" Type="Byte" />
                 </UpdateParameters>
             </asp:SqlDataSource>
         </div>
