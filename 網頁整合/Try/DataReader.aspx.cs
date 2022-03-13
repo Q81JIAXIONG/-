@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -16,10 +17,10 @@ namespace 網頁整合.Try
         {
             
             //1.連結資料庫
-            using (SqlConnection connection = new SqlConnection("Data Source=DESKTOP-VP7O62I\\SQLEXPRESS;Initial Catalog=網頁整合DB;Integrated Security=True"))
+            using (SqlConnection connection = new SqlConnection(WebConfigurationManager.ConnectionStrings["網頁整合DBConnectionString"].ConnectionString))
             {
                 //2.執行
-                using (SqlCommand command = new SqlCommand("SELECT * FROM [網頁整合DB].[dbo].[ProgrammingLanguage] WHERE language = '"+ TextBox1.Text+"'" , connection))
+                using (SqlCommand command = new SqlCommand("SELECT * FROM [網頁整合DB].[dbo].[ProgrammingLanguage] WHERE language = '"+ TextBox1.Text + "'", connection))
                 {
                     connection.Open();
                     //command.Parameters.Add("@language", SqlDbType.VarChar);

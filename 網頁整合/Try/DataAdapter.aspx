@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DataReader.aspx.cs" Inherits="網頁整合.Try.DataReader" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DataAdapter.aspx.cs" Inherits="網頁整合.Try.DataAdapter" %>
 
 <!DOCTYPE html>
 
