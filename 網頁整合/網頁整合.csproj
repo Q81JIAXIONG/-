@@ -133,6 +133,8 @@
     <Content Include="Try\DataReader.aspx" />
     <Content Include="Try\dataSource.aspx" />
     <Content Include="Try\DigitalComputing.aspx" />
+    <Content Include="Try\ExecuteNonQuery.aspx" />
+    <Content Include="Try\ExecuteScalar.aspx" />
     <Content Include="Try\GridView.aspx" />
     <Content Include="Try\TryApplication.aspx" />
     <Content Include="Try\tryContorller.aspx" />
@@ -275,6 +277,20 @@
     </Compile>
     <Compile Include="Try\DigitalComputing.aspx.designer.cs">
       <DependentUpon>DigitalComputing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Try\ExecuteNonQuery.aspx.cs">
+      <DependentUpon>ExecuteNonQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Try\ExecuteNonQuery.aspx.designer.cs">
+      <DependentUpon>ExecuteNonQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Try\ExecuteScalar.aspx.cs">
+      <DependentUpon>ExecuteScalar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Try\ExecuteScalar.aspx.designer.cs">
+      <DependentUpon>ExecuteScalar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Try\GridView.aspx.cs">
       <DependentUpon>GridView.aspx</DependentUpon>
