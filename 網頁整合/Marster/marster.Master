@@ -4,7 +4,7 @@
 
 <html>
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -12,6 +12,25 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <div>
+                <div></div>
+                <div>
+                    <a href="../WebPage/Home.aspx">logo</a>
+                </div>
+                <div>
+                    <a href="../Authentication/Login.aspx">登入</a>
+                </div>
+            </div>
+            <nav>
+                <div>
+                    <ul>
+                        <li><a href="../WebPage/About.aspx">關於我們</a></li>
+                        <li><a href="#">購買商品</a></li>
+                        <li><a href="#">高級會員區</a></li>
+                    </ul>
+                </div>
+            </nav>
+
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>

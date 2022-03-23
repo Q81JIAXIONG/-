@@ -108,7 +108,7 @@
     <Content Include="About.aspx" />
     <Content Include="Authentication\Login.aspx" />
     <Content Include="Authentication\Register.aspx" />
-    <Content Include="Authentication\unauthorized.aspx" />
+    <Content Include="Authentication\Unauthorized.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -143,6 +143,7 @@
     <Content Include="Try\useTryMarstPage1.aspx" />
     <Content Include="Try\useTryMarstPage2.aspx" />
     <Content Include="Try\TryViewState.aspx" />
+    <Content Include="WebPage\About.aspx" />
     <Content Include="WebPage\Advanced.aspx" />
     <Content Include="WebPage\General.aspx" />
     <Content Include="WebPage\Home.aspx" />
@@ -218,12 +219,12 @@
     <Compile Include="Authentication\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Authentication\unauthorized.aspx.cs">
-      <DependentUpon>unauthorized.aspx</DependentUpon>
+    <Compile Include="Authentication\Unauthorized.aspx.cs">
+      <DependentUpon>Unauthorized.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Authentication\unauthorized.aspx.designer.cs">
-      <DependentUpon>unauthorized.aspx</DependentUpon>
+    <Compile Include="Authentication\Unauthorized.aspx.designer.cs">
+      <DependentUpon>Unauthorized.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -354,6 +355,13 @@
     </Compile>
     <Compile Include="Try\TryViewState.aspx.designer.cs">
       <DependentUpon>TryViewState.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebPage\Advanced.aspx.cs">
       <DependentUpon>Advanced.aspx</DependentUpon>

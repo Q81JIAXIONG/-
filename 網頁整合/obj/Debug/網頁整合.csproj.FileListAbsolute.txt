@@ -69,8 +69,8 @@ D:\嘉雄\git\網頁整合\網頁整合\bin\Microsoft.AspNet.FriendlyUrls.xml
 D:\嘉雄\git\網頁整合\網頁整合\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\嘉雄\git\網頁整合\網頁整合\bin\zh-Hant\System.Web.Optimization.resources.dll
 D:\嘉雄\git\網頁整合\網頁整合\bin\zh-Hant\Microsoft.AspNet.FriendlyUrls.resources.dll
-D:\嘉雄\git\網頁整合\網頁整合\obj\Debug\網頁整合.csproj.AssemblyReference.cache
 D:\嘉雄\git\網頁整合\網頁整合\obj\Debug\網頁整合.csproj.CoreCompileInputs.cache
 D:\嘉雄\git\網頁整合\網頁整合\obj\Debug\網頁整合.csproj.CopyComplete
 D:\嘉雄\git\網頁整合\網頁整合\obj\Debug\網頁整合.dll
 D:\嘉雄\git\網頁整合\網頁整合\obj\Debug\網頁整合.pdb
+D:\嘉雄\git\網頁整合\網頁整合\obj\Debug\網頁整合.csproj.AssemblyReference.cache

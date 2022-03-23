@@ -11,7 +11,7 @@ namespace 網頁整合.WebPage
 {
 
 
-    public partial class Home
+    public partial class About
     {
     }
 }
