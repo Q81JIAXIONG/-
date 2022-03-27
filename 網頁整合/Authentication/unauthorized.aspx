@@ -3,4 +3,5 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>無瀏覽權限</h1>
+    <a href="../WebPage/Home.aspx">回首頁</a>
 </asp:Content>
