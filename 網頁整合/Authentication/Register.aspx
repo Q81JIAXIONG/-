@@ -46,7 +46,7 @@
             重新輸入密碼:<asp:TextBox ID="repassword" runat="server" TextMode="Password"></asp:TextBox>
         </div>
         <div>
-            <asp:Button ID="Button1" runat="server" Text="送出" />
+            <asp:Button ID="Button1" runat="server" Text="送出" OnClick="Button1_Click" />
         </div>
     </div>
 </asp:Content>
