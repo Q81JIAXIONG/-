@@ -35,12 +35,22 @@ namespace 網頁整合.Authentication
                 Response.Write(errmeg);
                 return;
             }
-            
+
+            //檢查有無重複信箱
+            errmeg = CheckRepeatEmail();
+            if (errmeg != "")
+            {
+                Response.Write(errmeg);
+                return;
+            }
+
             //寫入註冊資料
             if (!InsertData())
             {
                 Response.Write("資料寫入失敗");
+                return;
             }
+            Response.Redirect("Login.aspx");
         }
         private string CheckData()
         {
@@ -105,6 +115,30 @@ namespace 網頁整合.Authentication
                 }
             }
         }
+        private string CheckRepeatEmail()
+        {
+            string returnstring = "";
+            //1.連結資料庫
+            using (SqlConnection connection = new SqlConnection(WebConfigurationManager.ConnectionStrings["網頁整合DBConnectionString"].ConnectionString))
+            {
+                //2.執行
+                using (SqlCommand command = new SqlCommand("SELECT count(1)count FROM [網頁整合DB].[dbo].[User] WHERE Email = @Email", connection))
+                {
+                    command.Parameters.Add("@Email", SqlDbType.VarChar);
+                    command.Parameters["@Email"].Value = email.Text;
+
+                    connection.Open();
+                    object obj = command.ExecuteScalar();
+
+                    //3.自由發揮
+                    if (Convert.ToInt32(obj) > 0)
+                        returnstring = "此信箱已有註冊";
+                    return returnstring;
+
+                    //4.關閉資源
+                }
+            }
+        }
         private bool InsertData()
         {
             int identity = InsertUserData();//插入User資料
@@ -117,7 +151,7 @@ namespace 網頁整合.Authentication
 
             return InsertUserPLData(identity);
         }
-
+         
         private int InsertUserData()
         {
             string commandstring =

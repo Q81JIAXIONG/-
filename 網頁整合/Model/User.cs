@@ -11,6 +11,6 @@ namespace 網頁整合.Model
         public string Name;
         public string Email;
         public string Account;
-        public int PermissionID;
+        public int RoleID;
     } 
 }

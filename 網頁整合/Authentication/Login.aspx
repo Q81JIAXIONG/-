@@ -5,13 +5,13 @@
     <h1>登入</h1>
     <div>
         <div>
-            帳號:<asp:TextBox ID="TextBox1" runat="server" TextMode="SingleLine"></asp:TextBox>
+            帳號:<asp:TextBox ID="account" runat="server" TextMode="SingleLine"></asp:TextBox>
         </div>
         <div>
-            密碼:<asp:TextBox ID="TextBox2" runat="server" TextMode="Password"></asp:TextBox>
+            密碼:<asp:TextBox ID="password" runat="server" TextMode="Password"></asp:TextBox>
         </div>
         
-        <asp:Button ID="Button1" runat="server" Text="確定" />
+        <asp:Button ID="Button1" runat="server" Text="確定" OnClick="Button1_Click" />
         <a href="Register.aspx">註冊</a>
     </div>
 </asp:Content>
