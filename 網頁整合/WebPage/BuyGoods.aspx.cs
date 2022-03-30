@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace 網頁整合.WebPage
 {
-    public partial class General : Page
+    public partial class BuyGoods : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

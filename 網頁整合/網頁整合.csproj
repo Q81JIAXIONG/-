@@ -145,11 +145,12 @@
     <Content Include="Try\TryViewState.aspx" />
     <Content Include="WebPage\About.aspx" />
     <Content Include="WebPage\Advanced.aspx" />
-    <Content Include="WebPage\General.aspx" />
+    <Content Include="WebPage\BuyGoods.aspx" />
     <Content Include="WebPage\Home.aspx" />
     <Content Include="img\youtube.png" />
     <Content Include="Try\AddOne.aspx" />
     <Content Include="Marster\marster.Master" />
+    <Content Include="Marster\Login.Master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -242,6 +243,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Marster\Login.Master.cs">
+      <DependentUpon>Login.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Marster\Login.Master.designer.cs">
+      <DependentUpon>Login.Master</DependentUpon>
     </Compile>
     <Compile Include="Model\User.cs" />
     <Compile Include="Try\CSSInternalStyles2.aspx.cs">
@@ -370,12 +378,12 @@
     <Compile Include="WebPage\Advanced.aspx.designer.cs">
       <DependentUpon>Advanced.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebPage\General.aspx.cs">
-      <DependentUpon>General.aspx</DependentUpon>
+    <Compile Include="WebPage\BuyGoods.aspx.cs">
+      <DependentUpon>BuyGoods.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebPage\General.aspx.designer.cs">
-      <DependentUpon>General.aspx</DependentUpon>
+    <Compile Include="WebPage\BuyGoods.aspx.designer.cs">
+      <DependentUpon>BuyGoods.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebPage\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>

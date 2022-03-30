@@ -4,19 +4,16 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using 網頁整合.Model;
 
-namespace 網頁整合.WebPage
+namespace 網頁整合.Marster
 {
-    public partial class Advanced : Page
+    public partial class Login : System.Web.UI.MasterPage
     {
         protected void Page_Init(object sender, EventArgs e)
         {
-            User user = (User)Session["LoginUser"];
-
-            if (user.RoleID != 2)
+            if (Session["LoginUser"] == null)
             {
-                Response.Redirect("..\\Authentication\\Unauthorized.aspx");
+                Response.Redirect("..\\Authentication\\Login.aspx");
             }
         }
         protected void Page_Load(object sender, EventArgs e)

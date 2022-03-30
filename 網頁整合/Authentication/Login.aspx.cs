@@ -31,6 +31,7 @@ namespace 網頁整合.Authentication
                 }
 
                 Session["LoginUser"] = user;
+                Response.Redirect("..\\WebPage\\Home.aspx");
             }
             else
             {

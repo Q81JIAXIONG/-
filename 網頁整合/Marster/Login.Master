@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="marster.master.cs" Inherits="網頁整合.Marster.marster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Login.master.cs" Inherits="網頁整合.Marster.Login" %>
 
 <!DOCTYPE html>
 
