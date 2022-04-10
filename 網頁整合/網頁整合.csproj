@@ -116,6 +116,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\TryMultipleStyleSheets.css" />
+    <Content Include="CSS\Reset.css" />
+    <Content Include="CSS\Top.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -128,6 +130,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="img\loginbgimg.jpg" />
+    <Content Include="img\logo.png" />
     <Content Include="Try\CSSInternalStyles2.aspx" />
     <Content Include="Try\DataAdapter.aspx" />
     <Content Include="Try\DataReader.aspx" />

@@ -6,18 +6,23 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
+
+    <link href="../CSS/Reset.css" rel="stylesheet" />
+    <link href="../CSS/Top.css" rel="stylesheet" />
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <div>
-                <div></div>
-                <div>
-                    <a href="../WebPage/Home.aspx">logo</a>
+            <div class="top">
+                <div class="logo">
+                    <a href="../WebPage/Home.aspx">
+                        <img src="../img/logo.png" alt="Alternate Text" />
+                    </a>
                 </div>
-                <div>
+                <div class="login">
                     <a href="../Authentication/Login.aspx">登入</a>
                 </div>
             </div>
