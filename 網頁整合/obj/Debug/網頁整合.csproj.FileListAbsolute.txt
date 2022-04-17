@@ -73,4 +73,4 @@ D:\嘉雄\git\網頁整合\網頁整合\obj\Debug\網頁整合.csproj.CoreCompil
 D:\嘉雄\git\網頁整合\網頁整合\obj\Debug\網頁整合.csproj.CopyComplete
 D:\嘉雄\git\網頁整合\網頁整合\obj\Debug\網頁整合.dll
 D:\嘉雄\git\網頁整合\網頁整合\obj\Debug\網頁整合.pdb
-D:\嘉雄\git\網頁整合\網頁整合\obj\Debug\網頁整合.csproj.AssemblyReference.cache
+D:\嘉雄\git\網頁整合\網頁整合\bin\ASPNetSpell.dll

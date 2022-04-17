@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Marster/Login.Master" AutoEventWireup="true" CodeBehind="BuyGoods.aspx.cs" Inherits="網頁整合.WebPage.BuyGoods" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master/Login.Master" AutoEventWireup="true" CodeBehind="BuyGoods.aspx.cs" Inherits="網頁整合.WebPage.BuyGoods" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
