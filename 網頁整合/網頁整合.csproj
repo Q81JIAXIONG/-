@@ -244,6 +244,7 @@
     <Content Include="Try\TryViewState.aspx" />
     <Content Include="WebPage\About.aspx" />
     <Content Include="WebPage\Advanced.aspx" />
+    <Content Include="WebPage\boxmodel.aspx" />
     <Content Include="WebPage\BuyGoods.aspx" />
     <Content Include="WebPage\Home.aspx" />
     <Content Include="img\youtube.png" />
@@ -254,6 +255,11 @@
     <Content Include="ASPNetSpellInclude\dictionaries\English %28International%29.dic" />
     <Content Include="ASPNetSpellInclude\debugging-test-scripts\Test-Instalation.ashx" />
     <Content Include="ASPNetSpellInclude\core\default.ashx" />
+    <Content Include="WebPage\tryBackground.aspx" />
+    <Content Include="WebPage\tryCSSSelectors.aspx" />
+    <Content Include="WebPage\tryFontStyle.aspx" />
+    <Content Include="WebPage\tryPosition.aspx" />
+    <Content Include="WebPage\tryTouchEffect.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -481,6 +487,13 @@
     <Compile Include="WebPage\Advanced.aspx.designer.cs">
       <DependentUpon>Advanced.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebPage\boxmodel.aspx.cs">
+      <DependentUpon>boxmodel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\boxmodel.aspx.designer.cs">
+      <DependentUpon>boxmodel.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebPage\BuyGoods.aspx.cs">
       <DependentUpon>BuyGoods.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -607,6 +620,41 @@
     </Compile>
     <Compile Include="Try\AddOne.aspx.designer.cs">
       <DependentUpon>AddOne.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\tryBackground.aspx.cs">
+      <DependentUpon>tryBackground.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\tryBackground.aspx.designer.cs">
+      <DependentUpon>tryBackground.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\tryCSSSelectors.aspx.cs">
+      <DependentUpon>tryCSSSelectors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\tryCSSSelectors.aspx.designer.cs">
+      <DependentUpon>tryCSSSelectors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\tryFontStyle.aspx.cs">
+      <DependentUpon>tryFontStyle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\tryFontStyle.aspx.designer.cs">
+      <DependentUpon>tryFontStyle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\tryPosition.aspx.cs">
+      <DependentUpon>tryPosition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\tryPosition.aspx.designer.cs">
+      <DependentUpon>tryPosition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\tryTouchEffect.aspx.cs">
+      <DependentUpon>tryTouchEffect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\tryTouchEffect.aspx.designer.cs">
+      <DependentUpon>tryTouchEffect.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

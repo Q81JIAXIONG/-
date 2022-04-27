@@ -21,8 +21,7 @@
             height:600px;
             backdrop-filter:blur(5px) brightness(60%);
         }
-
-        h3 {
+        .login-box h3 {
             font-size:46px;
             color:#ffff00;
             text-align:center;

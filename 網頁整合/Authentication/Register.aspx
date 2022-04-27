@@ -9,7 +9,6 @@
             top: 126px;
             bottom: 0px;
         }
-
         .input-box {
             position: absolute;
             top: 0;
@@ -23,46 +22,38 @@
             display: flex;
             flex-wrap: wrap;
         }
-
         .input-row {
             width: 100%;
             display: flex;
             justify-content: space-around;
             align-items: center;
         }
-
-            .input-row > div {
-                width: 50%;
-            }
-
-            .input-row h1 {
-                color: brown;
-                font-size: 32px;
-                font-weight: bold;
-            }
-
-            .input-row div > * {
-                margin: 2px 20px;
-            }
-
-            .input-row div > input, .input-row div > select {
-                width: 210px;
-                box-sizing: border-box;
-                font-size: 20px;
-                background-color:aliceblue;
-            }
-
-
+        .input-row > div {
+            width: 50%;
+        }
+        .input-row h1 {
+            color: brown;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .input-row div > * {
+            margin: 2px 20px;
+        }
+        .input-row div > input, 
+        .input-row div > select {
+            width: 210px;
+            box-sizing: border-box;
+            font-size: 20px;
+            background-color:aliceblue;
+        }
         tbody {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between
         }
-
         h5 {
             font-size: 20px;
         }
-
         .textbox {
             font-size: 30px;
             background-color: #aaaaaa;
@@ -80,7 +71,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="wrap">
-
         <div class="input-box">
             <div class="input-row">
                 <h1>註冊</h1>
