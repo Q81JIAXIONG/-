@@ -157,7 +157,7 @@ namespace 網頁整合.Authentication
             string commandstring =
 @"INSERT INTO [網頁整合DB].[dbo].[User]([Name],[SexID],[Email],[Account],[PassWord],[RoleID],[EducationID]) 
 VALUES(@Name, @SexID,@Email,@Account,@PassWord,@RoleID,@EducationID)
-SELECT  scope_identity()";
+SELECT @identity = scope_identity()";
 
             try
             {
@@ -184,8 +184,11 @@ SELECT  scope_identity()";
                         command.Parameters["@RoleID"].Value = "1";
                         command.Parameters["@EducationID"].Value = educationDropDownList.SelectedValue;
 
-                        int identity = command.ExecuteNonQuery();
+                        command.Parameters.Add("@identity", SqlDbType.Int);
+                        command.Parameters["@identity"].Direction = ParameterDirection.Output;
 
+                        command.ExecuteNonQuery();
+                        int identity = Convert.ToInt32(command.Parameters["@identity"].Value);
                         //3.自由發揮
                         return identity;
                         //4.關閉資源
