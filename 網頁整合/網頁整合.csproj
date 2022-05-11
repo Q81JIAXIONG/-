@@ -257,6 +257,7 @@
     <Content Include="ASPNetSpellInclude\core\default.ashx" />
     <Content Include="WebPage\tryBackground.aspx" />
     <Content Include="WebPage\tryCSSSelectors.aspx" />
+    <Content Include="WebPage\tryFlex.aspx" />
     <Content Include="WebPage\tryFontStyle.aspx" />
     <Content Include="WebPage\tryPosition.aspx" />
     <Content Include="WebPage\tryTouchEffect.aspx" />
@@ -634,6 +635,13 @@
     </Compile>
     <Compile Include="WebPage\tryCSSSelectors.aspx.designer.cs">
       <DependentUpon>tryCSSSelectors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPage\tryFlex.aspx.cs">
+      <DependentUpon>tryFlex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPage\tryFlex.aspx.designer.cs">
+      <DependentUpon>tryFlex.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebPage\tryFontStyle.aspx.cs">
       <DependentUpon>tryFontStyle.aspx</DependentUpon>

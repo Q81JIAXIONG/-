@@ -28,16 +28,16 @@
             justify-content: space-around;
             align-items: center;
         }
-        .input-row > div {
-            width: 50%;
+        .input-row div > * {
+            margin: 2px 20px;
         }
         .input-row h1 {
             color: brown;
             font-size: 32px;
             font-weight: bold;
         }
-        .input-row div > * {
-            margin: 2px 20px;
+        .input-row > div {
+            width: 50%;
         }
         .input-row div > input, 
         .input-row div > select {
@@ -46,6 +46,7 @@
             font-size: 20px;
             background-color:aliceblue;
         }
+
         tbody {
             display: flex;
             flex-wrap: wrap;
@@ -92,18 +93,24 @@
                 </div>
                 <div>
                     <h5>學歷</h5>
-                    <asp:DropDownList ID="educationDropDownList" runat="server" DataSourceID="SqlDataSource2" DataTextField="Education" DataValueField="EducationID"></asp:DropDownList>
+                    <asp:DropDownList ID="educationDropDownList" runat="server"
+                        DataSourceID="SqlDataSource2" DataTextField="Education" 
+                        DataValueField="EducationID"></asp:DropDownList>
                 </div>
             </div>
             <div class="input-row">
                 <div>
                     <h5>性別</h5>
-                    <asp:RadioButtonList ID="sexRadioButtonList" runat="server" DataSourceID="SqlDataSource1" DataTextField="Sex" DataValueField="SexID"></asp:RadioButtonList>
+                    <asp:RadioButtonList ID="sexRadioButtonList" runat="server" 
+                        DataSourceID="SqlDataSource1" DataTextField="Sex" 
+                        DataValueField="SexID"></asp:RadioButtonList>
                 </div>
 
                 <div>
                     <h5>擅長程式語言</h5>
-                    <asp:CheckBoxList ID="LanguageCheckBoxList" runat="server" DataSourceID="SqlDataSource3" DataTextField="language" DataValueField="PLID"></asp:CheckBoxList>
+                    <asp:CheckBoxList ID="LanguageCheckBoxList" runat="server"
+                        DataSourceID="SqlDataSource3" DataTextField="language"
+                        DataValueField="PLID"></asp:CheckBoxList>
                 </div>
             </div>
             <div class="input-row">

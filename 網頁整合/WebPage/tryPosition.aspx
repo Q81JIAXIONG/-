@@ -8,16 +8,19 @@
     <title></title>
 
     <style>
-        form {
-            height:200vh;
-        }
         .A,.B,.C {
             border:red solid 3px;
-            width:50%;
+            padding:50px;
         }
 
         .B {
-            position:fixed;
+            position:relative;
+        }
+        .C {
+            position:absolute;
+            border:blue solid 3px;
+            padding:30px;
+            right:0;
         }
     </style>
 </head>
