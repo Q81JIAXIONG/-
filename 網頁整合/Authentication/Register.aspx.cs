@@ -15,7 +15,9 @@ namespace 網頁整合.Authentication
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            dynamic a = "";
+            a = 123;
+            a = true;
         }
 
         protected void Button1_Click(object sender, EventArgs e)

@@ -238,6 +238,7 @@
     <Content Include="Try\TryApplication.aspx" />
     <Content Include="Try\tryContorller.aspx" />
     <Content Include="Try\TryCookie.aspx" />
+    <Content Include="Try\tryFrontEnd.aspx" />
     <Content Include="Try\TrySession.aspx" />
     <Content Include="Try\useTryMasterPage1.aspx" />
     <Content Include="Try\useTryMasterPage2.aspx" />
@@ -438,6 +439,13 @@
     </Compile>
     <Compile Include="Try\TryCookie.aspx.designer.cs">
       <DependentUpon>TryCookie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Try\tryFrontEnd.aspx.cs">
+      <DependentUpon>tryFrontEnd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Try\tryFrontEnd.aspx.designer.cs">
+      <DependentUpon>tryFrontEnd.aspx</DependentUpon>
     </Compile>
     <Compile Include="Try\tryMasterPage.Master.cs">
       <DependentUpon>tryMasterPage.Master</DependentUpon>
