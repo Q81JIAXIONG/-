@@ -235,6 +235,8 @@
     <Content Include="Try\ExecuteNonQuery.aspx" />
     <Content Include="Try\ExecuteScalar.aspx" />
     <Content Include="Try\GridView.aspx" />
+    <Content Include="Try\jsEvent.aspx" />
+    <Content Include="Try\selectElement.aspx" />
     <Content Include="Try\TryApplication.aspx" />
     <Content Include="Try\tryContorller.aspx" />
     <Content Include="Try\TryCookie.aspx" />
@@ -418,6 +420,20 @@
     </Compile>
     <Compile Include="Try\GridView.aspx.designer.cs">
       <DependentUpon>GridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Try\jsEvent.aspx.cs">
+      <DependentUpon>jsEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Try\jsEvent.aspx.designer.cs">
+      <DependentUpon>jsEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Try\selectElement.aspx.cs">
+      <DependentUpon>selectElement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Try\selectElement.aspx.designer.cs">
+      <DependentUpon>selectElement.aspx</DependentUpon>
     </Compile>
     <Compile Include="Try\TryApplication.aspx.cs">
       <DependentUpon>TryApplication.aspx</DependentUpon>

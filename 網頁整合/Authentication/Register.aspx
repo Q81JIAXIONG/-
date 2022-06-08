@@ -125,7 +125,7 @@
             </div>
 
             <div class="input-row">
-                <asp:Button ID="Button1" runat="server" Text="送出" CssClass="submit" OnClick="Button1_Click" />
+                <asp:Button ID="Button1" runat="server" Text="送出" CssClass="submit" OnClick="Button1_Click"  OnClientClick="return checkdate()"/>
             </div>
         </div>
     </div>
@@ -146,4 +146,11 @@
         runat="server"
         ConnectionString="<%$ ConnectionStrings:網頁整合DBConnectionString %>"
         SelectCommand="SELECT * FROM [ProgrammingLanguage]"></asp:SqlDataSource>
+
+    <script>
+        function checkdate() {
+            console.log('檢查')
+            return true
+        }
+    </script>
 </asp:Content>
