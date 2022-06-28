@@ -79,17 +79,17 @@
             <div class="input-row">
                 <div>
                     <h5>帳號</h5>
-                    <asp:TextBox ID="account" runat="server" TextMode="SingleLine"></asp:TextBox>
+                    <asp:TextBox ID="account" runat="server" TextMode="SingleLine" CssClass="account"></asp:TextBox>
                 </div>
                 <div>
                     <h5>姓名</h5>
-                    <asp:TextBox ID="name" runat="server" TextMode="SingleLine"></asp:TextBox>
+                    <asp:TextBox ID="name" runat="server" TextMode="SingleLine" CssClass="name"></asp:TextBox>
                 </div>
             </div>
             <div class="input-row">
                 <div>
                     <h5>信箱</h5>
-                    <asp:TextBox ID="email" runat="server" TextMode="Email"></asp:TextBox>
+                    <asp:TextBox ID="email" runat="server" TextMode="Email" CssClass="Email"></asp:TextBox>
                 </div>
                 <div>
                     <h5>學歷</h5>
@@ -116,16 +116,16 @@
             <div class="input-row">
                 <div>
                     <h5>密碼</h5>
-                    <asp:TextBox ID="password" runat="server" TextMode="Password"></asp:TextBox>
+                    <asp:TextBox ID="password" runat="server" TextMode="Password" CssClass="password"></asp:TextBox>
                 </div>
                 <div>
                     <h5>重新輸入密碼</h5>
-                    <asp:TextBox ID="repassword" runat="server" TextMode="Password"></asp:TextBox>
+                    <asp:TextBox ID="repassword" runat="server" TextMode="Password" CssClass="repassword"></asp:TextBox>
                 </div>
             </div>
 
             <div class="input-row">
-                <asp:Button ID="Button1" runat="server" Text="送出" CssClass="submit" OnClick="Button1_Click"  OnClientClick="return checkdate()"/>
+                <asp:Button ID="Button1" runat="server" Text="送出" CssClass="submit" OnClick="Button1_Click"  OnClientClick="return checkdata()"/>
             </div>
         </div>
     </div>
@@ -147,10 +147,98 @@
         ConnectionString="<%$ ConnectionStrings:網頁整合DBConnectionString %>"
         SelectCommand="SELECT * FROM [ProgrammingLanguage]"></asp:SqlDataSource>
 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script>
-        function checkdate() {
-            console.log('檢查')
-            return true
+        function checkdata() {
+            let account = document.querySelector('.account');
+            let name = document.querySelector('.name');
+            let Email = document.querySelector('.Email');
+            let password = document.querySelector('.password');
+            let repassword = document.querySelector('.repassword');
+
+            const accountCheckStr = /^[a-zA-Z0-9]{6,20}$/;
+            const emailCheckStr = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/;
+            const passwordCheckStr = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,30}$/;
+
+            let re = ''
+
+            if (!accountCheckStr.test(account.value)) {
+                re += '帳號必須英文或數字且6~20字元 <br>'
+            }
+            if (name.value.length < 3 || name.value.length > 20) {
+                re += '姓名字數要在3~20字 <br>'
+            }
+
+            if (!emailCheckStr.test(Email.value)) {
+                re += 'email格式有誤 <br>'
+            }
+            if (Email.value.length > 20) {
+                re += 'email字數要在20字元以內 <br>'
+            }
+
+            if (!passwordCheckStr.test(password.value)) {
+                re += '密碼必須至少1個數字、一個小寫英文字、一個大些英文字及長度要在8~30個字元 <br>'
+            }
+            if (password.value !== repassword.value) {
+                re += '密碼與重新輸入密碼不一致 <br>'
+            }
+
+            if (re.length !== 0) {
+                Swal.fire({
+                    icon: 'error',
+                    title: '輸入資料不正確',
+                    html: re
+                })
+            }
+
+            return re === '';
         }
+
+        //let account = document.querySelector('.account');
+        //let name = document.querySelector('.name');
+        //let Sex = document.querySelector('.repassword');
+        //let Email = document.querySelector('.Email');
+        //let password = document.querySelector('.password');
+        //let repassword = document.querySelector('.repassword');
+
+        //const accountCheckStr = /^[a-zA-Z0-9]{6,20}$/;
+        //const emailCheckStr = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/;
+        //const passwordCheckStr = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,30}$/;
+
+        //let re = ''
+
+        //if (!accountCheckStr.test(account.value)) {
+        //    re += '帳號必須英文或數字且6~20字元 '
+        //}
+        //if (name.value.length < 3 || name.value.length > 20) {
+        //    re += '姓名字數要在3~20字  '
+        //}
+
+        //if (!emailCheckStr.test(Email.value)) {
+        //    re += 'email格式有誤 '
+        //}
+        //if (Email.value.length > 20) {
+        //    re += 'email字數要在20字元以內 '
+        //}
+
+        //if (!passwordCheckStr.test(password.value)) {
+        //    re += '密碼必須至少1個數字、一個小寫英文字、一個大些英文字及長度要在8~30個字元 '
+        //}
+        //if (password.value !== repassword.value) {
+        //    re += '密碼與重新輸入密碼不一致 '
+        //}
+
+        //if (re.length !== 0) {
+        //    Swal.fire({
+        //        icon: 'error',
+        //        title: '輸入資料不正確',
+        //        text: re
+        //    })
+        //}
+
+
+
+        //return re.length === 0
     </script>
 </asp:Content>

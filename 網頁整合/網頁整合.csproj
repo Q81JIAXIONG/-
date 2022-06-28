@@ -241,6 +241,7 @@
     <Content Include="Try\tryContorller.aspx" />
     <Content Include="Try\TryCookie.aspx" />
     <Content Include="Try\tryFrontEnd.aspx" />
+    <Content Include="Try\tryGetDOM.aspx" />
     <Content Include="Try\TrySession.aspx" />
     <Content Include="Try\useTryMasterPage1.aspx" />
     <Content Include="Try\useTryMasterPage2.aspx" />
@@ -462,6 +463,13 @@
     </Compile>
     <Compile Include="Try\tryFrontEnd.aspx.designer.cs">
       <DependentUpon>tryFrontEnd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Try\tryGetDOM.aspx.cs">
+      <DependentUpon>tryGetDOM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Try\tryGetDOM.aspx.designer.cs">
+      <DependentUpon>tryGetDOM.aspx</DependentUpon>
     </Compile>
     <Compile Include="Try\tryMasterPage.Master.cs">
       <DependentUpon>tryMasterPage.Master</DependentUpon>
